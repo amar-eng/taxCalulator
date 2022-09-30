@@ -1,5 +1,6 @@
 import { Container } from 'react-bootstrap';
 import InputForm from './components/InputForm';
+import './App.scss';
 function App() {
   return (
     <Container
@@ -10,8 +11,8 @@ function App() {
         color: '#3b2121',
       }}
     >
-      <h1 style={{ textAlign: 'center' }}>Tax Calculator</h1>
-      <h4>Find out how much you have to pay in taxes</h4>
+      <h1 className="header">Tax Calculator</h1>
+      <h4 className="sub-header">Find out how much you have to pay in taxes</h4>
       <InputForm />
     </Container>
   );

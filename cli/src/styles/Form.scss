@@ -1,10 +1,15 @@
+@import '../partials/_variable.scss';
+@import '../partials/_mixin.scss';
 .form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  @include desktop {
+    justify-content: center;
+  }
+
   &__input {
     background-color: rgb(217, 231, 242);
     border: none;
@@ -12,6 +17,17 @@
     padding: 10px;
     font-size: 17px;
     padding-left: 1rem;
+    // change these for breakpoints
+    flex: 0 0 70%;
+    width: 50%;
+    @include tablet {
+      flex: 0 0 70%;
+      width: 50%;
+    }
+    @include desktop {
+      flex: 0 0 30%;
+      width: 50%;
+    }
   }
   &__btn {
     background-color: rgb(180, 56, 15);
@@ -20,5 +36,11 @@
     padding: 10px 20px;
     font-size: 17px;
     color: whitesmoke;
+    @include tablet {
+      flex: 0 0 25%;
+    }
+    @include desktop {
+      flex: 0 0 10%;
+    }
   }
 }

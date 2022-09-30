@@ -1,10 +1,10 @@
 import { Table } from 'react-bootstrap';
-
+import '../styles/TaxBracket.scss';
 const TaxBracket = ({ brackets, salary }) => {
   return (
     <>
       <h1>TaxBracket</h1>
-      <Table striped bordered hover responsive>
+      <Table striped bordered hover responsive className="tableWrap">
         <thead>
           <th>Tax Bracket</th>
           <th>TaxRate</th>
