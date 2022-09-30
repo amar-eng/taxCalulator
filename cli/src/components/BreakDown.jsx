@@ -65,9 +65,9 @@ const BreakDown = ({ salary }) => {
           <>
             <h1>Breakdown</h1>
             <p>
-              Your Salary is{' '}
-              <span style={{ color: '#00D22F' }}>
-                ${salary.toLocaleString()}
+              Your Salary is ${' '}
+              <span style={{ color: '#00D22F' }} data-testid="salary-id">
+                {salary.toLocaleString()}
               </span>
             </p>
             <p>
